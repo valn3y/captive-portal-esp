@@ -205,7 +205,7 @@ void start_ap() {
         ESP.restart();
     }
 
-    MDNS.begin("sidi.com");
+    MDNS.begin("test.com");
     httpUpdater.setup(&httpServer, path_update, update_username, update_password);
     httpServer.begin();
 
